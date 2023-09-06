@@ -6,7 +6,9 @@ describe("Carrinho", () => {
     cy.visit("/carrinho");
   });
 
-  it("Editar produto", () => {});
+  it("Editar produto", () => {
+		
+	});
 
   it("Remover produto", () => {});
 });
