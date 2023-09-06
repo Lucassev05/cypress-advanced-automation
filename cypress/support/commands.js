@@ -30,8 +30,6 @@ Cypress.Commands.add("adicionarProdutoCarrinho", () => {
   //   cy.setCookie(key, value);
   // });
   // });
-
-  cy.visit("/checkout");
 });
 
 Cypress.Commands.add("realizarLogin", (email, password) => {

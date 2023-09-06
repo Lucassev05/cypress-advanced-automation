@@ -6,6 +6,7 @@ describe("Checkout", () => {
   before("Adiciona o produto no carrinho", () => {
     cy.realizarLogin(data.email, data.pass);
     cy.adicionarProdutoCarrinho();
+    cy.visit("/checkout");
   });
 
   it("Realizar Checkout com sucesso", () => {
