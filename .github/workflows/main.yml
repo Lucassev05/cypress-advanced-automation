@@ -21,7 +21,7 @@ jobs:
       run: npm install
 
     - name: Run Cypress tests and generate Allure report
-      run: npx cypress run
+      run: npx cypress run --env allure=true
           
     - name: Pega o histórico do Allure
       uses: actions/checkout@v2
