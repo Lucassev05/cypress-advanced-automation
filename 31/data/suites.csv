@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Oct 04 05:32:00 GMT 2023","Wed Oct 04 05:32:02 GMT 2023","1111","","Carrinho","","","","Pesquisar produto",""
+"passed","Wed Oct 04 05:31:46 GMT 2023","Wed Oct 04 05:31:50 GMT 2023","4242","","Conta","","","","Cadastro com sucesso",""
+"passed","Wed Oct 04 05:31:29 GMT 2023","Wed Oct 04 05:31:33 GMT 2023","3641","","Checkout","","","","Realizar Checkout com sucesso",""
