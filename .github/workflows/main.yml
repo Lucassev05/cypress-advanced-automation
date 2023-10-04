@@ -4,8 +4,6 @@ on:
   push:
     branches: [ ci ]
 
-    workflow_dispatch:
-
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -18,9 +16,6 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         continue-on-error: true
-        with:
-          install-command: npm install
-          browser: chrome
       - name: Get Allure history
         uses: actions/checkout@v2
         if: always()
