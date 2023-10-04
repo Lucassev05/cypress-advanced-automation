@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - name: Cypress run
+      - name: Executa os testes
         uses: cypress-io/github-action@v6
         continue-on-error: true
       - name: Get Allure history
