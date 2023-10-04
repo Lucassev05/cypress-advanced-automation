@@ -34,11 +34,11 @@ Cypress.Commands.add("adicionarProdutoCarrinho", () => {
 
 Cypress.Commands.add("realizarLogin", (email, password) => {
   const fd = new FormData();
-  fd.append("_wp_http_referer", "/minha-conta");
+  fd.append("_wp_http_referer", "	/my-account");
   fd.append("login", "Login");
   fd.append("password", password);
   fd.append("username", email);
-  fd.append("woocommerce-login-nonce", "ed52a2e41a");
+  fd.append("woocommerce-login-nonce", "0860ac0ec3");
 
   cy.request({
     url: "/minha-conta",
@@ -47,7 +47,7 @@ Cypress.Commands.add("realizarLogin", (email, password) => {
   });
   // Aparentemente o cypress já guarda automaticamente os cookies quando roda uma chamada na api e acessa a tela, então o then foi removido.
   // .then((resp) => {
-  //   resp.allRequestResponses[1]["Response Headers"]["set-cookie"].forEach(
+  //   resp.allRequestResponses[0]["Response Headers"]["set-cookie"].forEach(
   //     (cookie) => {
   //       const firstPart = cookie.split(";")[0];
   //       const divisor = firstPart.indexOf("=");
