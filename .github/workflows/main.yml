@@ -10,8 +10,10 @@ jobs:
 
     steps:
     - name: Checkout code
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
       with:
         node-version: 14 # ou a versão desejada do Node.js
 
@@ -19,8 +21,7 @@ jobs:
       run: npm install
 
     - name: Run Cypress tests and generate Allure report
-      run: |
-        npx cypress run
+      run: npx cypress run
           
       # - name: Pega o histórico do Allure
       #   uses: actions/checkout@v2
