@@ -16,6 +16,8 @@ jobs:
       - name: Executa os testes
         uses: cypress-io/github-action@v6
         continue-on-error: true
+        with:
+          env: allure=true
       - name: Get Allure history
         uses: actions/checkout@v2
         if: always()
