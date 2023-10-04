@@ -15,14 +15,14 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: 14 # ou a versão desejada do Node.js
+        node-version: "18.17.1" # ou a versão desejada do Node.js
 
     - name: Install dependencies
       run: npm install
 
     - name: Run Cypress tests and generate Allure report
       run: |
-        npx cypress run
+        npx cypress run --env allure=true --browser chrome
         npx allure generate allure-results --clean -o ./allure-report
       continue-on-error: true
 
